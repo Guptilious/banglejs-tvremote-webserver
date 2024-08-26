@@ -24,7 +24,7 @@ Below outlines some of the tasks that are covered by this project:
 
 ## Webserver Port assignment
 1. Open `webserver.js` and assign the port you would like your web server to run on.
-   const PORT = '';
+      const PORT = '';
 3. Ensure that all firewall settings are configured to allow access to this port and your DNS correctly points to your webserver.
 
 ## TV Settings
