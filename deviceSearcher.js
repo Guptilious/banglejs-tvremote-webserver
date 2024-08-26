@@ -14,8 +14,8 @@ async function startSSDPSearch() {
 
     // Server for advertising a service
     const server = new Server({
-        location: 'http:rpi-tv-webserver.com/device-desc.xml',
-        udn: 'uuid:rpi-tv-webserver'
+        location: 'http:tv-webserver.com/device-desc.xml',
+        udn: 'uuid:tv-webserver'
     });
 
     server.addUSN('upnp:rootdevice');
