@@ -56,13 +56,14 @@ Below outlines some of the tasks that are covered by this project:
     print("encryption_key: " + rc.enc_key)
 
 2. Run the following commands:
+   
     python3 -m venv venv
     ./venv/bin/pip install git+https://github.com/florianholzapfel/panasonic-viera.git
     ./venv/bin/pip install aiohttp
     ./venv/bin/python3 key.py
 
-3. enter in the pin shown on the TV.
-4. Copy the `app_id` and `encryption_key` that are output, into the `commands.js` variables.
+4. enter in the pin shown on the TV.
+5. Copy the `app_id` and `encryption_key` that are output, into the `commands.js` variables.
 
 ## TV connection Project
 The below project should be downloaded to the folder where this projects scripts are located (excluding the app/encryption_key project):
