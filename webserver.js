@@ -6,7 +6,10 @@ const express = require('express');
 const app = express();
 const tvCommand = require('./commands');
 
+const deviceSearch = require('./deviceSearcher.js');
+
 const PORT = '';
+
 const privateKey = fs.readFileSync('privkey.pem', 'utf8');
 const certificate = fs.readFileSync('cert.pem', 'utf8');
 const ca = fs.readFileSync('chain.pem', 'utf8');
