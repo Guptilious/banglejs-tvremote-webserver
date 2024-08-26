@@ -21,10 +21,15 @@ Below outlines some of the tasks that are covered by this project:
 
 
 # Preflight
-
-## Webserver Port assignment
+# npm install dependancies
+* http
+* https
+* fs
+* express
+## Webserver Port and credential assignment
 1. Open `webserver.js` and update `const PORT = '';` with the port you would like your web server to run on.
 . Ensure that all firewall settings are configured to allow access to this port and your DNS correctly points to your webserver.
+2. Create copies of your domains `privkey.pem`, `cert.pem` and `chain.pem` files and ensure they are located in the same folder as the main scripts.
 
 ## TV Settings
 1. On your TV go to Menu -> Network -> TV Remote App Settings and make sure that the following settings are all turned ON:
