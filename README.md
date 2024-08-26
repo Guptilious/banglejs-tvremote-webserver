@@ -56,6 +56,7 @@ Below outlines some of the tasks that are covered by this project:
     print("encryption_key: " + rc.enc_key)
 
 2. Run the following commands:
+
     python3 -m venv venv
     ./venv/bin/pip install git+https://github.com/florianholzapfel/panasonic-viera.git
     ./venv/bin/pip install aiohttp
