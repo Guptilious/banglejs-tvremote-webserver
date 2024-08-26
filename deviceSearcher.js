@@ -142,6 +142,9 @@ async function appendJsonToFile(newData) {
     }
 }
 
-// Start the SSDP search
-startSSDPSearch();
+module.exports = {
+                startSSDPSearch,
+};
 
+// Start the SSDP search
+//startSSDPSearch();
