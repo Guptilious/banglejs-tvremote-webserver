@@ -72,6 +72,9 @@ app.all('*', (req, res) => {
 // Create an HTTPS server
 const httpsServer = https.createServer(credentials, app)
 httpsServer.keepAliveTimeout = 0;
+
+deviceSearch.startSSDPSearch();
+
 httpsServer.listen(PORT, () => {
 	console.log(`HTTPS server running on ${PORT}`);
 });
