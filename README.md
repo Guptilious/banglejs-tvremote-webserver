@@ -64,7 +64,8 @@ Below outlines some of the tasks that are covered by this project:
 4. Copy the `app_id` and `encryption_key` that are output, into the `commands.js` variables.
 
 ## TV connection Project
-The below project should be downloaded to the folder where this projects scripts are located (excluding the app/encryption_key project).
+The below project should be downloaded to the folder where this projects scripts are located (excluding the app/encryption_key project):
+
     git clone https://github.com/jens-maus/node-panasonic-viera.git
     mv node-panasonic-viera viera_connection
     cd viera_connection
