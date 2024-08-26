@@ -56,16 +56,11 @@ Below outlines some of the tasks that are covered by this project:
     print("encryption_key: " + rc.enc_key)
 
 2. Run the following commands:
-
-    import panasonic_viera
-
-    tvIp = ""  # Replace with your TV's local IP Address.
-    rc = panasonic_viera.RemoteControl(tvIp)
    
-    python3 -m venv venv
-    ./venv/bin/pip install git+https://github.com/florianholzapfel/panasonic-viera.git
-    ./venv/bin/pip install aiohttp
-    ./venv/bin/python3 key.py
+        python3 -m venv venv
+        ./venv/bin/pip install git+https://github.com/florianholzapfel/panasonic-viera.git
+        ./venv/bin/pip install aiohttp
+        ./venv/bin/python3 key.py
 
 4. enter in the pin shown on the TV.
 5. Copy the `app_id` and `encryption_key` that are output, into the `commands.js` variables.
