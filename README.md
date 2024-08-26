@@ -26,6 +26,9 @@ Below outlines some of the tasks that are covered by this project:
 * https
 * fs
 * express
+* xml2js
+* node-ssdp
+* 
 ## Webserver Port and credential assignment
 1. Open `webserver.js` and update `const PORT = '';` with the port you would like your web server to run on.
 . Ensure that all firewall settings are configured to allow access to this port and your DNS correctly points to your webserver.
