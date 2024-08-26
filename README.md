@@ -73,7 +73,8 @@ The below project should be downloaded to the folder where this projects scripts
     cd ..
 
 ## Logins 
-Update the contents of config.json to your desired username and password. These will need to match the username and password that you will assign for the Bangle JS app.
+Update the contents of config.json to your desired username and password. These will need to match the username and password that you will assign for the Bangle JS app. You can add more than one user if you so wish.
 
-    login ui-account-name-2
-    password ui-pwd
+# Flight
+    node deviceSearcher.js    // should run as a background process that will continually search for new devices and create/update `ssdp-devices.json` with all discovered devices.
+    node webserver.js        // will activate the webserver and if the watch sends a request correctly, will be picked up and processed as required.
