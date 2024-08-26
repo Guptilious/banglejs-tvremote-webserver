@@ -83,7 +83,7 @@ The below project should be downloaded to the folder where this projects scripts
     cd ..
 
 ## Logins 
-Update the contents of config.json to your desired username and password. These will need to match the username and password that you will assign for the Bangle JS app. You can add more than one user if you so wish.
+Update the contents of `config.json` to your desired username and password. These will need to match the username and password that you will assign for the Bangle JS app. You can add more than one user if you so wish.
 
 
 # Usage
