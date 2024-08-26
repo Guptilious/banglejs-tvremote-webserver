@@ -51,7 +51,7 @@ app.post('/', (req, res) => {
 
 app.get('/ssdp-devices.json', (req, res) => {
 
-	const filePath = './viera_connection/ssdp-devices.json';
+	const filePath = './ssdp-devices.json';
 	fs.readFile(filePath, 'utf8', (err, data) => {
 		if (err) {
 			console.error('Error reading the file:', err);
