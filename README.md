@@ -33,7 +33,7 @@ Below outlines some of the tasks that are covered by this project:
         ./venv/bin/pip install aiohttp
         ./venv/bin/python3 key.py
 
-3. Enter in the pin shown on the TV into the terminal prompt.
+3. Enter in the pin shown on the TV into the terminal prompt. You should now have a file (`tv_credentials.json`) with your tv creds included, which will be used by the wider project.
 
 ## npm install dependancies
 Provided`package.json` is present in your folder, you can run the below for dependancies:
