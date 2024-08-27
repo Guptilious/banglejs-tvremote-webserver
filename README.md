@@ -61,7 +61,7 @@ key.py
     print("app_id: " + rc.app_id)
     print("encryption_key: " + rc.enc_key)
 
-2. Run the below commands:
+Run the below commands:
 
     python3 -m venv venv
     ./venv/bin/pip install git+https://github.com/florianholzapfel/panasonic-viera.git
