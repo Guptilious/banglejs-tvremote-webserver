@@ -21,7 +21,7 @@ Below outlines some of the tasks that are covered by this project:
 
 
 # Preflight
-# npm install dependancies
+## npm install dependancies
 Provided`package.json` is present in your folder, you can run the below for dependancies:
 
     npm install
