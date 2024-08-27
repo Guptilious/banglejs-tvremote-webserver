@@ -28,12 +28,13 @@ Below outlines some of the tasks that are covered by this project:
 
 2. Ensuring that your TV is turned on, run the below commands:
 
+        sudo apt install python3.10-venv
         python3 -m venv venv
         ./venv/bin/pip install git+https://github.com/florianholzapfel/panasonic-viera.git
         ./venv/bin/pip install aiohttp
         ./venv/bin/python3 key.py
 
-3. Enter in the pin shown on the TV into the terminal prompt. You should now have a file (`tv_credentials.json`) with your tv creds included, which will be used by the wider project.
+4. Enter in the pin shown on the TV into the terminal prompt. You should now have a file (`tv_credentials.json`) with your tv creds included, which will be used by the wider project.
 
 ## npm install dependancies
 Provided`package.json` is present in your folder, you can run the below for dependancies:
