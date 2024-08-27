@@ -16,17 +16,6 @@ Below outlines some of the tasks that are covered by this project:
 
 
 # Preflight
-## npm install dependancies
-Provided`package.json` is present in your folder, you can run the below for dependancies:
-
-    npm install
-
-
-## Webserver Port and credential assignment
-1. Open `webserver.js` and update `const PORT = '';` with the port you would like your web server to run on.
-. Ensure that all firewall settings are configured to allow access to this port and your DNS correctly points to your webserver.
-2. Create copies of your domains `privkey.pem`, `cert.pem` and `chain.pem` files and ensure they are located in the same folder as the main scripts.
-
 ## TV Settings
 1. On your TV go to Menu -> Network -> TV Remote App Settings and make sure that the following settings are all turned ON:
 * TV Remote
@@ -45,6 +34,16 @@ Provided`package.json` is present in your folder, you can run the below for depe
         ./venv/bin/python3 key.py
 
 3. Enter in the pin shown on the TV into the terminal prompt.
+
+## npm install dependancies
+Provided`package.json` is present in your folder, you can run the below for dependancies:
+
+    npm install
+
+## Webserver Port and credential assignment
+1. Open `webserver.js` and update `const PORT = '';` with the port you would like your web server to run on. Ensure that all firewall settings are configured to allow access to this port and your DNS correctly points to your webserver.
+2. Create copies of your domains `privkey.pem`, `cert.pem` and `chain.pem` files and ensure they are located in the same folder as the main scripts.
+
 
 ## Logins 
 Update the contents of `config.json` to your desired username and password. These will need to match the username and password that you will assign for the Bangle JS app. You can add more than one user if you so wish.
