@@ -63,10 +63,12 @@ Provided`package.json` is present in your folder, you can run the below for depe
 
 2. Run the following commands:
 
+
     python3 -m venv venv
     ./venv/bin/pip install git+https://github.com/florianholzapfel/panasonic-viera.git
     ./venv/bin/pip install aiohttp
     ./venv/bin/python3 key.py
+
 
 4. enter in the pin shown on the TV.
 5. Copy the `app_id` and `encryption_key` that are output, into the `commands.js` variables.
