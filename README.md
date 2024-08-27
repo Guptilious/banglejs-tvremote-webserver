@@ -37,7 +37,7 @@ Provided`package.json` is present in your folder, you can run the below for depe
 ## TV `app_id` and `encryption_key`
 1. Update `key.py` with your tv's local IP address (found in TV Settings step 2).
 
-2. Run the below commands:
+2. Ensuring that your TV is turned on, run the below commands:
 
         python3 -m venv venv
         ./venv/bin/pip install git+https://github.com/florianholzapfel/panasonic-viera.git
