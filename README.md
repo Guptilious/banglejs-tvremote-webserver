@@ -60,6 +60,9 @@ Provided`package.json` is present in your folder, you can run the below for depe
     # Display credentials (application ID and encryption key)
     print("app_id: " + rc.app_id)
     print("encryption_key: " + rc.enc_key)
+
+run the below commands:
+
     python3 -m venv venv
     ./venv/bin/pip install git+https://github.com/florianholzapfel/panasonic-viera.git
     ./venv/bin/pip install aiohttp
