@@ -1,10 +1,5 @@
 # Overview
-This project contains all the required scripts to set up the https webserver and devicesearcher for my BangleJS tvremote watch app. These are required in order for the app to work correctly with your TV. 
-In addition you will need:
-* A [viera connection project](https://github.com/jens-maus/node-panasonic-viera) which will connect and send the correct commands to your TV from the app.
-* A [viera key creation project](https://github.com/florianholzapfel/panasonic-viera) which will collect the app_id and encryption_key for your tv.
-
-For now functionality is limited to panasonic TV's but other brands may be added in the future. Additionally I'd like to combine the above 2 projects into a node script that will run commands and grab keys. At this time I was only able to find a python script to ge the keys. 
+This project contains all the required scripts to set up the https webserver and devicesearcher for my BangleJS tvremote watch app. These are required in order for the app to work correctly with your TV. For now functionality is limited to panasonic TV's but other brands may be added in the future.
 
 Below outlines some of the tasks that are covered by this project:
 * Authenticate users attempting to send either POST or GET requests to the server.
