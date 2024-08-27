@@ -43,6 +43,7 @@ Provided`package.json` is present in your folder, you can run the below for depe
 1. Copy the below into a script called `key.py` making sure to put your TV's local IP address in. It's location does not matter as we are only need the keys it creates.
 
 key.py
+
     import panasonic_viera
 
     tvIp = ""  # Replace with your TV's local IP Address.
