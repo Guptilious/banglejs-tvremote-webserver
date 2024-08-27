@@ -24,7 +24,7 @@ Below outlines some of the tasks that are covered by this project:
 2. Then, go to Menu -> Network -> Network Status -> Status Details and take note of your TV ip address.
 
 ## TV `app_id` and `encryption_key`
-1. Update `key.py` with your tv's local IP address (found in TV Settings step 2).
+1. Update `tvIp = ""` in `key.py` with your tv's local IP address (found in TV Settings step 2).
 
 2. Ensuring that your TV is turned on, run the below commands:
 
@@ -41,7 +41,7 @@ Provided`package.json` is present in your folder, you can run the below for depe
     npm install
 
 ## Webserver Port and credential assignment
-1. Open `webserver.js` and update `const PORT = '';` with the port you would like your web server to run on. Ensure that all firewall settings are configured to allow access to this port and your DNS correctly points to your webserver.
+1. Update `const PORT = '';` in `webserver.js` with the port you would like your web server to run on. Ensure that all firewall settings are configured to allow access to this port and your DNS correctly points to your webserver.
 2. Create copies of your domains `privkey.pem`, `cert.pem` and `chain.pem` files and ensure they are located in the same folder as the main scripts.
 
 
