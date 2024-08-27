@@ -40,6 +40,11 @@ Below outlines some of the tasks that are covered by this project:
 Provided`package.json` is present in your folder, you can run the below for dependancies:
 
     npm install
+    git clone https://github.com/jens-maus/node-panasonic-viera.git
+    cd node-panasonic-viera
+    npm install
+    cd ..
+    mv node-panasonic-viera node_modules
 
 ## Logins 
 1. Update the contents of `config.json` with your desired username and password. These will need to match the username and password that you will assign for the Bangle JS app. You can add more than one user if you so wish.
