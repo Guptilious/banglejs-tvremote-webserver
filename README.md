@@ -41,7 +41,7 @@ Provided`package.json` is present in your folder, you can run the below for depe
     npm install
 
 ## Logins 
-Update the contents of `config.json` to your desired username and password. These will need to match the username and password that you will assign for the Bangle JS app. You can add more than one user if you so wish.
+Update the contents of `config.json` with your desired username and password. These will need to match the username and password that you will assign for the Bangle JS app. You can add more than one user if you so wish.
 
 ## Webserver Port and credential assignment
 1. Update `const PORT = '';` in `webserver.js` with the port you would like your web server to run on. Ensure that all firewall settings are configured to allow access to this port and your DNS correctly points to your webserver.
