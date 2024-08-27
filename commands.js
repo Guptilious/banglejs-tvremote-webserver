@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const {VieraKeys, Viera} = require('./viera_connection/viera');
+const {VieraKeys, Viera} = require('viera_connection/viera');
 const viera = new Viera();
 
 const validApps = ['netflix', 'youtube', 'disney', 'prime'];
