@@ -42,7 +42,7 @@ Provided`package.json` is present in your folder, you can run the below for depe
 ## TV `app_id` and `encryption_key`.
 1. Copy the below into a script called `key.py` making sure to put your TV's local IP address in. It's location does not matter as we are only need the keys it creates.
 
-## key.py
+key.py
     import panasonic_viera
 
     tvIp = ""  # Replace with your TV's local IP Address.
@@ -61,7 +61,7 @@ Provided`package.json` is present in your folder, you can run the below for depe
     print("app_id: " + rc.app_id)
     print("encryption_key: " + rc.enc_key)
 
-run the below commands:
+2. Run the below commands:
 
     python3 -m venv venv
     ./venv/bin/pip install git+https://github.com/florianholzapfel/panasonic-viera.git
