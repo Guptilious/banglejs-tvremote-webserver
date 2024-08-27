@@ -40,14 +40,12 @@ Provided`package.json` is present in your folder, you can run the below for depe
 
     npm install
 
-## Webserver Port and credential assignment
-1. Update `const PORT = '';` in `webserver.js` with the port you would like your web server to run on. Ensure that all firewall settings are configured to allow access to this port and your DNS correctly points to your webserver.
-2. Create copies of your domains `privkey.pem`, `cert.pem` and `chain.pem` files and ensure they are located in the same folder as the main scripts.
-
-
 ## Logins 
 Update the contents of `config.json` to your desired username and password. These will need to match the username and password that you will assign for the Bangle JS app. You can add more than one user if you so wish.
 
+## Webserver Port and credential assignment
+1. Update `const PORT = '';` in `webserver.js` with the port you would like your web server to run on. Ensure that all firewall settings are configured to allow access to this port and your DNS correctly points to your webserver.
+2. Create copies of your domains `privkey.pem`, `cert.pem` and `chain.pem` files and ensure they are located in the same folder as the main scripts.
 
 # Usage
     node webserver.js        // will activate the webserver and if the watch sends a request correctly, will be picked up and processed as required. It will also run `deviceSearch.js` in the background, which will continually search for new devices and create/update `ssdp-devices.json` with all discovered devices.
