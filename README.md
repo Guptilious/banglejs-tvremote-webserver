@@ -44,10 +44,12 @@ Provided`package.json` is present in your folder, you can run the below for depe
 
 2. Run the below commands:
 
+
     python3 -m venv venv
     ./venv/bin/pip install git+https://github.com/florianholzapfel/panasonic-viera.git
     ./venv/bin/pip install aiohttp
     ./venv/bin/python3 key.py
+
 
 3. Enter in the pin shown on the TV into the terminal prompt.
 
