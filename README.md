@@ -22,12 +22,9 @@ Below outlines some of the tasks that are covered by this project:
 
 # Preflight
 # npm install dependancies
-* http
-* https
-* fs
-* express
-* xml2js
-* node-ssdp
+Provided the package.json is present in your folder you can just run:
+    npm install
+
 
 ## Webserver Port and credential assignment
 1. Open `webserver.js` and update `const PORT = '';` with the port you would like your web server to run on.
@@ -72,15 +69,6 @@ Below outlines some of the tasks that are covered by this project:
 
 4. enter in the pin shown on the TV.
 5. Copy the `app_id` and `encryption_key` that are output, into the `commands.js` variables.
-
-## TV connection Project
-The below project should be downloaded to the folder where this projects scripts are located (excluding the app/encryption_key project):
-
-    git clone https://github.com/jens-maus/node-panasonic-viera.git
-    mv node-panasonic-viera viera_connection
-    cd viera_connection
-    npm install
-    cd ..
 
 ## Logins 
 Update the contents of `config.json` to your desired username and password. These will need to match the username and password that you will assign for the Bangle JS app. You can add more than one user if you so wish.
