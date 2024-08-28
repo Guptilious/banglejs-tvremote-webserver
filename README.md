@@ -1,5 +1,11 @@
 # Overview
-This project contains all the required scripts to set up the https webserver and devicesearcher for my BangleJS tvremote watch app. These are required in order for the app to work correctly with your TV. For now functionality is limited to panasonic TV's but other brands may be added in the future.
+This project contains all the required scripts to set up a https webserver and devicesearcher for the BangleJS tvremote watch app. These are required in order for that app to work correctly with your TV. 
+
+If you do not have a BangleJS watch, then this project is probably not for you.
+
+This project also assumes that you have, at the very least, registered your own domain name with a company like [this](https://www.mythic-beasts.com/) and configured a [DNS](https://www.mythic-beasts.com/support/domains) for it. Creating these is outside of the scope of this project and will need to be completed first before proceeding.
+
+For now functionality is limited to panasonic TV's but other brands may be added in the future.
 
 Below outlines some of the tasks that are covered by this project:
 * Authenticate users attempting to send either POST or GET requests to the server.
@@ -13,6 +19,7 @@ Below outlines some of the tasks that are covered by this project:
 * [viera key creation project](https://github.com/florianholzapfel/panasonic-viera)
 * [Gadget Bridge](https://www.espruino.com/Gadgetbridge)
 * [Bangle JS](https://www.espruino.com/Reference#software)
+* [DNS Overview](https://www.mythic-beasts.com/support/domains)
 
 
 # Preflight
@@ -50,8 +57,14 @@ Provided`package.json` is present in your folder, you can run the below for depe
 1. Update the contents of `config.json` with your desired username and password. These will need to match the username and password that you will assign for the Bangle JS app. You can add more than one user if you so wish.
 
 ## Webserver Port and credential assignment
-1. Update `const PORT = '';` in `webserver.js` with the port you would like your web server to run on. Ensure that all firewall settings are configured to allow access to this port and your DNS correctly points to your webserver.
-2. Create copies of your domains `privkey.pem`, `cert.pem` and `chain.pem` files and ensure they are located in the same folder as the main scripts.
+1. Update `const PORT = '';` in `webserver.js` with the port you would like your web server to run on. Ensure that all firewall settings are configured to allow access to this port and your DNS (assuming you have created it) correctly points to your webserver.
+2. Assuming that you have registered your domain and created your DNS entry, you will need to create SSL certs with the below command, to authenticate your domain:
+
+        sudo apt install certbot
+        sudo certbot certonly -d <YOUR-DNS-NAME> --standalone -m <YOUR-EMAIL-ADDRESS> --staging # used as a test to make sure certbot will succeed before an official push
+        sudo certbot certonly -d <YOUR-DNS-NAME> --standalone -m <YOUR-EMAIL-ADDRESS>
+   
+4.   If the certbot succeeds, you can then copy the `privkey.pem`, `cert.pem` and `chain.pem` files from `/etc/letsencrypt/live/<YOUR-DNS-NAME>` to the folder this project will run from.
 
 # Usage
     node webserver.js        // will activate the webserver and if the watch sends a request correctly, will be picked up and processed as required. It will also run `deviceSearch.js` in the background, which will continually search for new devices and create/update `ssdp-devices.json` with all discovered devices.
