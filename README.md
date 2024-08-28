@@ -1,7 +1,7 @@
 # Overview
 This project contains all the required scripts to set up a https webserver and devicesearcher for the BangleJS tvremote watch app. These are required in order for that app to work correctly with your TV. 
 
-If you do not have a BangleJS watch, then this project is probably not for you.
+If you do not have a [BangleJS](https://shop.espruino.com/banglejs2) watch, then this project is probably not for you.
 
 This project also assumes that you have, at the very least, registered your own domain name with a company like [this](https://www.mythic-beasts.com/) and configured a [DNS](https://www.mythic-beasts.com/support/domains) for it. Creating these is outside of the scope of this project and will need to be completed first before proceeding.
 
