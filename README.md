@@ -1,5 +1,5 @@
 # Overview
-This project contains all the required scripts to set up a https webserver and devicesearcher for the BangleJS tvremote watch app. These are required in order for that app to work correctly with your TV. 
+This project contains all the required scripts to set up a https webserver and devicesearcher for the BangleJS [tvremote watch app](https://github.com/Guptilious/BangleApps/tree/master/apps/tvremote). These are required in order for that app to work correctly with your TV. 
 
 If you do not have a [BangleJS](https://shop.espruino.com/banglejs2) watch, then this project is probably not for you.
 
