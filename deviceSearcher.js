@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+# Created by (https://github.com/Guptilious)
+              
 const fs = require('fs');
 const http = require('http');
 const xml2js = require('xml2js');
