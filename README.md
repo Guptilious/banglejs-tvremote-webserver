@@ -68,3 +68,6 @@ Provided`package.json` is present in your folder, you can run the below for depe
 
 # Usage
     node webserver.js        // will activate the webserver and if the watch sends a request correctly, will be picked up and processed as required. It will also run `deviceSearch.js` in the background, which will continually search for new devices and create/update `ssdp-devices.json` with all discovered devices.
+
+# Creator
+[Guptilious](https://github.com/Guptilious)
