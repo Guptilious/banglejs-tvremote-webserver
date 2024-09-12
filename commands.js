@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+# Created by (https://github.com/Guptilious)
+              
 const {Viera} = require('node-panasonic-viera');
 const {VieraKeys} = require('./viera-keys');
 
