@@ -46,7 +46,7 @@ Below outlines some of the tasks that are covered by this project:
 ## npm install dependancies
 Provided`package.json` is present in your folder, you can run the below for dependancies:
 
-    npm install
+    sudo apt install npm -y
     git clone https://github.com/jens-maus/node-panasonic-viera.git
     cd node-panasonic-viera
     npm install
